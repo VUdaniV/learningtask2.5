@@ -1,6 +1,5 @@
 
 
-/* ---------- BASIC SETUP ---------- */
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +17,6 @@ a {
   color: inherit;
 }
 
-/* Centers the content of every section */
 .container {
   width: 90%;
   max-width: 1100px;
@@ -63,7 +61,7 @@ a {
   margin-right: 12px;
 }
 
-/* the sun = a small circle */
+
 .logo-sun {
   position: absolute;
   top: 0;
@@ -74,7 +72,7 @@ a {
   border-radius: 50%;
 }
 
-/* the mountain = a triangle made with borders */
+
 .logo-mountain {
   position: absolute;
   bottom: 0;
@@ -93,7 +91,7 @@ a {
 }
 
 
-/* ---------- HERO ---------- */
+
 .hero {
   background-color: #0E2143;
   color: #ffffff;
@@ -154,13 +152,13 @@ a {
   border-radius: 50% 50% 45% 45% / 60% 60% 40% 40%;
   border-bottom: 8px solid #0A1730;
 
-  /* centers the logo printed on the cap */
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* bigger version of the logo for the cap */
+
 .logo-icon-big {
   width: 150px;
   height: 90px;
@@ -181,7 +179,7 @@ a {
 }
 
 
-/* ---------- FEATURES ---------- */
+
 .features {
   background-color: #F3F5F8;
   padding: 40px 0;
@@ -212,7 +210,7 @@ a {
   color: #5C6B84;
 }
 
-/* the circle around each icon */
+
 .circle {
   width: 50px;
   height: 50px;
@@ -225,7 +223,7 @@ a {
   justify-content: center;
 }
 
-/* simple shapes inside the circles */
+
 .shape-wave {
   width: 22px;
   height: 10px;
@@ -259,7 +257,7 @@ a {
 }
 
 
-/* ---------- COLORS ---------- */
+
 .colors {
   padding: 40px 0;
   text-align: center;
@@ -285,7 +283,7 @@ a {
 .color-gray   { background-color: #8791A3; }
 
 
-/* ---------- FOOTER ---------- */
+
 .footer {
   background-color: #0E2143;
   color: #C9D5E6;
@@ -307,7 +305,6 @@ a {
 }
 
 
-/* ---------- MOBILE VIEW ---------- */
 @media (max-width: 768px) {
   .header-row,
   .hero-row,
