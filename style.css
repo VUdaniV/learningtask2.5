@@ -1,7 +1,4 @@
-/* ==========================================
-   EURON - style.css
-   Learning Task 2.3
-   ========================================== */
+
 
 /* ---------- BASIC SETUP ---------- */
 * {
@@ -53,11 +50,7 @@ a {
 }
 
 
-/* ==========================================
-   PURE CSS ELEMENT 1: THE LOGO
-   A circle for the sun + a triangle for the
-   mountain. No image file is used.
-   ========================================== */
+
 .logo {
   display: flex;
   align-items: center;
@@ -153,10 +146,7 @@ a {
 }
 
 
-/* ==========================================
-   PURE CSS ELEMENT 2: THE SWIMMING CAP
-   One box shaped with border-radius.
-   ========================================== */
+
 .cap {
   width: 300px;
   height: 270px;
