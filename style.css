@@ -1,0 +1,361 @@
+/* ==========================================
+   EURON - style.css
+   Learning Task 2.3
+   ========================================== */
+
+/* ---------- BASIC SETUP ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #16233B;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Centers the content of every section */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+/* ---------- HEADER ---------- */
+.header {
+  background-color: #0E2143;
+  color: #ffffff;
+  padding: 15px 0;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu a {
+  margin-left: 30px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #21C8DC;
+}
+
+
+/* ==========================================
+   PURE CSS ELEMENT 1: THE LOGO
+   A circle for the sun + a triangle for the
+   mountain. No image file is used.
+   ========================================== */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  position: relative;
+  width: 50px;
+  height: 30px;
+  margin-right: 12px;
+}
+
+/* the sun = a small circle */
+.logo-sun {
+  position: absolute;
+  top: 0;
+  right: 8px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+/* the mountain = a triangle made with borders */
+.logo-mountain {
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  width: 0;
+  height: 0;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-bottom: 24px solid #ffffff;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+
+/* ---------- HERO ---------- */
+.hero {
+  background-color: #0E2143;
+  color: #ffffff;
+  padding: 50px 0;
+}
+
+.hero-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-text {
+  width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 70px;
+  letter-spacing: 2px;
+}
+
+.hero-text h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 14px;
+  color: #C9D5E6;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  background-color: #ffffff;
+  color: #0E2143;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #21C8DC;
+}
+
+.hero-image {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* ==========================================
+   PURE CSS ELEMENT 2: THE SWIMMING CAP
+   One box shaped with border-radius.
+   ========================================== */
+.cap {
+  width: 300px;
+  height: 270px;
+  background-color: #17284A;
+  border-radius: 50% 50% 45% 45% / 60% 60% 40% 40%;
+  border-bottom: 8px solid #0A1730;
+
+  /* centers the logo printed on the cap */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* bigger version of the logo for the cap */
+.logo-icon-big {
+  width: 150px;
+  height: 90px;
+}
+
+.logo-icon-big .logo-sun {
+  width: 26px;
+  height: 26px;
+  border-width: 3px;
+  right: 25px;
+}
+
+.logo-icon-big .logo-mountain {
+  left: 20px;
+  border-left-width: 55px;
+  border-right-width: 55px;
+  border-bottom-width: 70px;
+}
+
+
+/* ---------- FEATURES ---------- */
+.features {
+  background-color: #F3F5F8;
+  padding: 40px 0;
+}
+
+.features-row {
+  display: flex;
+  text-align: center;
+}
+
+.feature {
+  width: 25%;
+  padding: 0 20px;
+  border-right: 1px solid #DFE4EC;
+}
+
+.feature:last-child {
+  border-right: none;
+}
+
+.feature h3 {
+  font-size: 15px;
+  margin: 12px 0 8px;
+}
+
+.feature p {
+  font-size: 13px;
+  color: #5C6B84;
+}
+
+/* the circle around each icon */
+.circle {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border: 2px solid #0E2143;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* simple shapes inside the circles */
+.shape-wave {
+  width: 22px;
+  height: 10px;
+  border-top: 3px solid #0E2143;
+  border-bottom: 3px solid #0E2143;
+}
+
+.shape-arrow {
+  width: 0;
+  height: 0;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-left: 14px solid #0E2143;
+}
+
+.shape-drop {
+  width: 14px;
+  height: 14px;
+  background-color: #0E2143;
+  border-radius: 0 50% 50% 50%;
+  transform: rotate(45deg);
+}
+
+.shape-check {
+  width: 16px;
+  height: 8px;
+  margin-bottom: 4px;
+  border-left: 3px solid #0E2143;
+  border-bottom: 3px solid #0E2143;
+  transform: rotate(-45deg);
+}
+
+
+/* ---------- COLORS ---------- */
+.colors {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.colors-title {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.color {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin: 0 12px;
+  border-radius: 50%;
+}
+
+.color-orange { background-color: #F68B4C; }
+.color-navy   { background-color: #0E2143; }
+.color-cyan   { background-color: #21C8DC; }
+.color-blue   { background-color: #2A7FF0; }
+.color-gray   { background-color: #8791A3; }
+
+
+/* ---------- FOOTER ---------- */
+.footer {
+  background-color: #0E2143;
+  color: #C9D5E6;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-title {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-bottom: 8px;
+}
+
+.footer a {
+  color: #21C8DC;
+}
+
+
+/* ---------- MOBILE VIEW ---------- */
+@media (max-width: 768px) {
+  .header-row,
+  .hero-row,
+  .features-row {
+    display: block;
+    text-align: center;
+  }
+
+  .menu a {
+    margin: 0 10px;
+  }
+
+  .logo {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .hero-text,
+  .hero-image,
+  .feature {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 50px;
+  }
+
+  .hero-image {
+    margin-top: 30px;
+  }
+
+  .feature {
+    border-right: none;
+    border-bottom: 1px solid #DFE4EC;
+    padding: 20px;
+  }
+
+  .color {
+    margin: 8px;
+  }
+}
